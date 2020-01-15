@@ -6,99 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f8c3493-adfd-420a-b947-c7ff3b5b6c23" name="默认更改列表" comment="Wangjinwei's pytroch web project start">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b0908e6-7fc3-4da5-a922-f75517e7ae54.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b0908e6-7fc3-4da5-a922-f75517e7ae54/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/wjw.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pytorchdemo/dao/MessageDynamicSqlSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pytorchdemo/dao/MessageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pytorchdemo/entity/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generator.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sqlmap/MessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pytorchdemo/dao/MessageDynamicSqlSupport$Message.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pytorchdemo/dao/MessageDynamicSqlSupport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pytorchdemo/dao/MessageMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pytorchdemo/entity/Message.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/generator.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/sqlmap/MessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/pytorchdemo/dao/MessageMapperTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/com/pytorchdemo/dao/MessageDynamicSqlSupport$Message.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/com/pytorchdemo/dao/MessageDynamicSqlSupport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/com/pytorchdemo/dao/MessageMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/com/pytorchdemo/entity/Message.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/generator.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/spring/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/classes/sqlmap/MessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/avalon-framework-4.1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-collections-3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-httpclient-3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-lang-2.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-logging-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/commons-pool-1.5.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/jackson-annotations-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/jackson-core-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/jackson-databind-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/jsr250-api-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/logkit-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/mybatis-3.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/mybatis-dynamic-sql-1.1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/mybatis-spring-2.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/mysql-connector-java-8.0.18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/slf4j-api-1.7.30.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/slf4j-log4j12-1.7.30.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-jcl-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/lib/standard-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wjw/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wjw.iml" afterDir="false" />
+    <list default="true" id="9f8c3493-adfd-420a-b947-c7ff3b5b6c23" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,8 +322,16 @@
       <workItem from="1579065637273" duration="252000" />
       <workItem from="1579065952356" duration="113000" />
       <workItem from="1579066140796" duration="9349000" />
-      <workItem from="1579075614126" duration="526000" />
+      <workItem from="1579075614126" duration="1656000" />
     </task>
+    <task id="LOCAL-00001" summary="Wangjinwei's pytroch web project start">
+      <created>1579076481622</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579076481622</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,10 +370,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="91" key="#项目结构/0.0.1600.860@0.0.1600.860" timestamp="1579075770241" />
-    <state x="333" y="27" key="CommitChangelistDialog2" timestamp="1579076151283">
+    <state x="333" y="27" key="CommitChangelistDialog2" timestamp="1579076473345">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="333" y="27" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1579076151283" />
+    <state x="333" y="27" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1579076473345" />
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog" timestamp="1579077053358">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1579077053358" />
     <state x="580" y="173" key="FileChooserDialogImpl" timestamp="1579075829227">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -464,6 +386,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="625" y="347" width="373" height="166" key="Github.CreateGistDialog/0.0.1600.860@0.0.1600.860" timestamp="1579075039262" />
+    <state x="675" y="328" width="274" height="203" key="Github.ShareDialog" timestamp="1579076735257">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="675" y="328" width="274" height="203" key="Github.ShareDialog/0.0.1600.860@0.0.1600.860" timestamp="1579076735257" />
     <state width="1557" height="109" key="GridCell.Tab.0.bottom" timestamp="1579075501306">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -520,6 +446,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="303" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1579076418476" />
+    <state x="392" y="166" key="Vcs.Push.Dialog.v2" timestamp="1579077363641">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="166" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1579077363641" />
     <state x="564" y="160" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579072062150">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -528,6 +458,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="440" y="19" width="719" height="822" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1579075199134" />
+    <state x="492" y="232" key="git4idea.merge.GitPullDialog" timestamp="1579077000764">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="492" y="232" key="git4idea.merge.GitPullDialog/0.0.1600.860@0.0.1600.860" timestamp="1579077000764" />
     <state x="480" y="122" key="spring file set editor" timestamp="1579057493737">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
