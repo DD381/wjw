@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!--https://mybatis.org/generator/configreference/xmlconfig.html-->
 <generatorConfiguration>
     <!--导入属性配置 -->
     <properties resource="generator.properties"/>
 
     <classPathEntry
             location="D:\IDEA Maven\Maven Repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar"/>
-    <context id="context1">
+
+    <context id="JDBCTtables" targetRuntime="MyBatis3">
         <!-- 注释 -->
         <commentGenerator>
             <property name="suppressAllComments" value="true"/><!-- 是否取消注释 -->
@@ -16,7 +18,7 @@
 
         <jdbcConnection driverClass="${driver}"
                         connectionURL="${url}"
-                        userId="${username}"
+                        userId="${user}"
                         password="${password}"/>
 
         <!-- 类型转换 -->
@@ -27,14 +29,15 @@
 
         <javaModelGenerator targetPackage="${modelPackage}"
                             targetProject="${modelProject}"/>
+
+
         <sqlMapGenerator targetPackage="${sqlPackage}" targetProject="${sqlProject}"/>
+
+
         <javaClientGenerator targetPackage="${mapperPackage}"
                              targetProject="${mapperProject}" type="XMLMAPPER"/>
 
-        <!-- 如果需要通配所有表 直接用sql的通配符    %即可 -->
-        <table schema="" tableName="${table}" enableCountByExample="false"
-               enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false"/>
-
+        <!-- 如果需要通配所有表 直接用sql的通配符%即可 -->
+        <table schema="" tableName="${table}"/>
     </context>
 </generatorConfiguration>

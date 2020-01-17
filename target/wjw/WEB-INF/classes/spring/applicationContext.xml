@@ -10,37 +10,38 @@
          http://www.springframework.org/schema/mvc
          http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!-- ①：对com.springmvc包中的所有类进行扫描，以完成Bean创建和自动依赖注入的功能 -->
+    <!-- ①：对com.pytorchdemo包中的所有类进行扫描，以完成Bean创建和自动依赖注入的功能 -->
     <context:component-scan base-package="com.pytorchdemo"/>
     <mvc:annotation-driven/>
     <!-- 静态资源访问 -->
     <!--如果webapp下你新建了文件夹，想访问里面的静态资源，那么就要在这配置一下-->
-    <mvc:resources location="/images/" mapping="/images/**"/>
-    <mvc:resources location="/css/" mapping="/css/**"/>
-    <mvc:resources location="/styles/" mapping="/styles/**"/>
-    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources mapping="/css/**" location="/css/"/>
+    <mvc:resources mapping="/images/**" location="/images/"/>
+    <mvc:resources mapping="/js/**" location="/js/"/>
+    <mvc:resources mapping="/styles/**" location="/styles/"/>
+    <mvc:default-servlet-handler/>
 
     <!-- Configures the @Controller programming model
     <mvc:annotation-driven />-->
     <!-- ②：启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+    <!-- 类级别的处理器映射  -->
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
-
+    <!-- 方法级别的处理器映射  -->
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">
             <list>
-                <ref bean="stringHttpMessageConverter"/>
-                <ref bean="mappingJacksonHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                    <property name="supportedMediaTypes">
+                        <list>
+                            <value>text/html;charset=UTF-8</value>
+                            <value>application/json;charset=UTF-8</value>
+                        </list>
+                    </property>
+                </bean>
             </list>
         </property>
     </bean>
-    <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
-        <constructor-arg value="UTF-8"/>
-        <property name="supportedMediaTypes">
-            <list>
-                <value>application/json;charset=UTF-8</value>
-            </list>
-        </property>
-    </bean>
+
     <bean id="mappingJacksonHttpMessageConverter"
           class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="supportedMediaTypes">
@@ -74,15 +75,15 @@
     </bean>
 
     <!-- 数据库连接池 -->
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${driver}"/>
         <property name="url" value="${url}"/>
-        <property name="username" value="${username}"/>
+        <property name="username" value="${user}"/>
         <property name="password" value="${password}"/>
         <property name="initialSize" value="1"/>
-        <property name="maxActive" value="100"/>
+        <property name="maxTotal" value="100"/>
         <property name="maxIdle" value="5"/>
-        <property name="maxWait" value="80000"/>
+        <property name="maxWaitMillis" value="80000"/>
     </bean>
 
     <!-- 配置事务管理器 -->
@@ -104,7 +105,7 @@
         <!-- 数据源 -->
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations" value="classpath:sqlmap/*Mapper.xml"/>
-        <property name="typeAliasesPackage" value="com.springmvc.entity" />
+        <property name="typeAliasesPackage" value="com.pytorchdemo.entity"/>
 
     </bean>
 
