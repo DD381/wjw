@@ -1,6 +1,7 @@
 package com.pytorchdemo.dao;
 
 import com.pytorchdemo.entity.Message;
+import com.pytorchdemo.entity.MessageExample;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
+
+import java.util.List;
 
 /**
  * @author WangJinWei
@@ -23,7 +26,7 @@ public class MessageMapperTest {
 
 
     @Autowired
-    MessageMapper mapper;
+    private MessageMapper mapper;
 
     @Before
     public void setUp() throws Exception {
@@ -35,12 +38,22 @@ public class MessageMapperTest {
 
     @Test
     public void insert() {
+        MessageExample messageExample = new MessageExample();
+
+        /*查找*/
+        MessageExample.Criteria criteria = messageExample.createCriteria();
+        criteria.andIdEqualTo(1);
+        List<Message> list = mapper.selectByExample(messageExample);
+        for (Message m : list) {
+            System.out.println(m.toString());
+        }
+
+        /*插入*/
         Message message = new Message();
-        message.setCommand("吃饭");
-        message.setContent("睡觉");
-        message.setDescription("打豆豆");
-        int result = mapper.insert(message);
-        System.out.println(result);
-        assert (result == 1);
+        message.setCommand("1");
+        message.setDescription("1");
+        message.setContent("1");
+        mapper.insert(message);
+
     }
 }

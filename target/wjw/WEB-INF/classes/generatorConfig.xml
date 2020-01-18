@@ -28,23 +28,16 @@
         </javaTypeResolver>
 
         <javaModelGenerator targetPackage="${modelPackage}"
-                            targetProject="${modelProject}">
-            <property name="enableSubPackages" value="true"/>
-            <property name="trimStrings" value="true"/>
-        </javaModelGenerator>
+                            targetProject="${modelProject}"/>
 
-        <sqlMapGenerator targetPackage="${sqlPackage}" targetProject="${sqlProject}">
-            <property name="enableSubPackages" value="true"/>
-        </sqlMapGenerator>
+
+        <sqlMapGenerator targetPackage="${sqlPackage}" targetProject="${sqlProject}"/>
+
 
         <javaClientGenerator targetPackage="${mapperPackage}"
-                             targetProject="${mapperProject}" type="XMLMAPPER">
-            <property name="enableSubPackages" value="true"/>
-        </javaClientGenerator>
+                             targetProject="${mapperProject}" type="XMLMAPPER"/>
 
         <!-- 如果需要通配所有表 直接用sql的通配符%即可 -->
-        <table schema="" tableName="${table}" enableCountByExample="false"
-               enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false"/>
+        <table schema="" tableName="${table}"/>
     </context>
 </generatorConfiguration>

@@ -11,6 +11,5 @@ import java.util.ArrayList;
  */
 public interface UserinfoService {
     int insert(Userinfo record);
-
     ArrayList<Userinfo> selectSelective(Userinfo record);
 }
